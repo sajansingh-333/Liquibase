@@ -1,0 +1,5 @@
+There are several different reasons why updates to the database are required, some examples are:
+
+New features require new attributes in existing tables or entirely new tables
+Bug fixes may lead to changes in names or data types in the database
+Performance issues that require additional indexes in the databas
