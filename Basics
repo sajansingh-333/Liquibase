@@ -1,0 +1,18 @@
+database change in liquibase = changelog (changelog will maintain the versions of DB changes)
+database change in liquibase is measured as changesets 
+changeset is the executable Db change in Liquibase.
+Liquibase uses changesets to represent a single change to your database.
+
+Inorder to track these changesets liquibase uses the Tracking Table called DATABASECHANGELOG.
+Databasechangelog will track if the changeset is deployed or not on the DB.
+Liquibase also prevents conflicts from different callers’ updates on a secondary table called DATABASECHANGELOGLOCK.
+
+changes in DB can be written using XML,YAML,SQL,and JSON.
+
+Changelogs and tracking tables allow Liquibase to:
+
+Track and version database changes
+Users know which changes have been deployed to the database and which changes have not yet been deployed.
+
+Deploy changes
+Liquibase compares the changelog against the tracking table and only deploys changes that have not been deployed to the database.
